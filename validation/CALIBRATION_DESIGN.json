@@ -1,0 +1,21 @@
+{
+  "design_version": "1",
+  "frozen_before_first_run": "2026-11-08",
+  "purpose": "Observe finite-donor percentile-bootstrap coverage under a fixed known synthetic population; do not tune to coverage outcomes.",
+  "data_kind": "synthetic",
+  "true_condition_difference": 1.0,
+  "donor_sd": 1.0,
+  "field_sd": 0.4,
+  "cell_sd": 0.3,
+  "donors_per_condition": [2, 4, 8, 16],
+  "replicates_per_scenario": 400,
+  "bootstrap_draws": 400,
+  "base_seed": 20261108,
+  "scenarios": {
+    "balanced": "Three fields per donor and five cells per field.",
+    "unequal": "One to five fields per donor; each field has 1, 3 or 15 cells. Counts are independent of the measurement."
+  },
+  "estimator": "Equal field means within donor, equal donors within condition; donor-resampled 95% percentile interval.",
+  "report": ["coverage", "coverage_binomial_monte_carlo_standard_error", "wilson_95_interval", "mean_estimate", "bias", "root_mean_square_error", "mean_interval_width"],
+  "pass_fail_criterion": "None for empirical coverage. Numerical failures are reported. Coverage and its dependence on donor n are the observations."
+}

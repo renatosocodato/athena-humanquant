@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=69", "wheel"]
+build-backend = "setuptools.build_meta"
+[project]
+name = "athena-humanquant"
+version = "0.1.0rc5"
+description = "Hierarchical donor-level measurement contrasts"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [{name = "Renato Socodato"}]
+dependencies = ["numpy>=1.26,<3", "pandas>=2.2,<4"]
+[project.optional-dependencies]
+test = ["pytest>=8", "scipy>=1.11,<2"]
+welch = ["scipy>=1.11,<2"]
+[project.scripts]
+athena-humanquant = "athena_humanquant.cli:main"
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.exclude-package-data]
+"*" = ["**/__pycache__/*", "**/*.pyc", "**/*.pyo"]
+
+[tool.setuptools.package-data]
+athena_humanquant = ["calibration/*.json"]

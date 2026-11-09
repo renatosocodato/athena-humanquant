@@ -1,0 +1,1 @@
+The MIT licence covers the authored code and synthetic examples in this distribution. External engines, Python/R dependencies and external datasets retain their own licences. No real donor dataset, third-party engine binary or fitted private-data model is redistributed.

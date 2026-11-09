@@ -1,0 +1,129 @@
+{
+  "data_kind": "synthetic",
+  "results": [
+    {
+      "scenario": "balanced",
+      "donors_per_condition": 2,
+      "replicates": 400,
+      "coverage": 0.6625,
+      "coverage_monte_carlo_se": 0.023642850399222173,
+      "coverage_wilson_95": [
+        0.6148101420626593,
+        0.7070983622786944
+      ],
+      "mean_estimate": 1.010279944312393,
+      "bias": 0.010279944312393012,
+      "rmse": 1.014283810704542,
+      "mean_interval_width": 2.2936272816450094
+    },
+    {
+      "scenario": "balanced",
+      "donors_per_condition": 4,
+      "replicates": 400,
+      "coverage": 0.8675,
+      "coverage_monte_carlo_se": 0.016951677645590125,
+      "coverage_wilson_95": [
+        0.8307536803033202,
+        0.8972547833609723
+      ],
+      "mean_estimate": 1.080975585489619,
+      "bias": 0.08097558548961907,
+      "rmse": 0.7163798756359435,
+      "mean_interval_width": 2.2798931004184895
+    },
+    {
+      "scenario": "balanced",
+      "donors_per_condition": 8,
+      "replicates": 400,
+      "coverage": 0.91,
+      "coverage_monte_carlo_se": 0.014309088021254182,
+      "coverage_wilson_95": [
+        0.8779172124152723,
+        0.9342827062306049
+      ],
+      "mean_estimate": 1.009214288655551,
+      "bias": 0.009214288655551,
+      "rmse": 0.5228871118329781,
+      "mean_interval_width": 1.846655347576371
+    },
+    {
+      "scenario": "balanced",
+      "donors_per_condition": 16,
+      "replicates": 400,
+      "coverage": 0.9375,
+      "coverage_monte_carlo_se": 0.012103072956898178,
+      "coverage_wilson_95": [
+        0.9093658838696939,
+        0.957310858587797
+      ],
+      "mean_estimate": 1.0263599420638478,
+      "bias": 0.026359942063847806,
+      "rmse": 0.3779088340577203,
+      "mean_interval_width": 1.346486321417555
+    },
+    {
+      "scenario": "unequal",
+      "donors_per_condition": 2,
+      "replicates": 400,
+      "coverage": 0.66,
+      "coverage_monte_carlo_se": 0.02368543856465402,
+      "coverage_wilson_95": [
+        0.6122516850900381,
+        0.7047043807229871
+      ],
+      "mean_estimate": 0.9519523930647671,
+      "bias": -0.048047606935232974,
+      "rmse": 0.9858176016431033,
+      "mean_interval_width": 2.284695785133315
+    },
+    {
+      "scenario": "unequal",
+      "donors_per_condition": 4,
+      "replicates": 400,
+      "coverage": 0.8325,
+      "coverage_monte_carlo_se": 0.018671083926756902,
+      "coverage_wilson_95": [
+        0.7927798983351764,
+        0.8658944259325168
+      ],
+      "mean_estimate": 0.9949957814292267,
+      "bias": -0.005004218570773189,
+      "rmse": 0.7456366807805586,
+      "mean_interval_width": 2.333194747063569
+    },
+    {
+      "scenario": "unequal",
+      "donors_per_condition": 8,
+      "replicates": 400,
+      "coverage": 0.9175,
+      "coverage_monte_carlo_se": 0.013756248580190752,
+      "coverage_wilson_95": [
+        0.8864031104605785,
+        0.9406541237702841
+      ],
+      "mean_estimate": 1.0290606730974927,
+      "bias": 0.029060673097492575,
+      "rmse": 0.5154115496387122,
+      "mean_interval_width": 1.8981262289946068
+    },
+    {
+      "scenario": "unequal",
+      "donors_per_condition": 16,
+      "replicates": 400,
+      "coverage": 0.9425,
+      "coverage_monte_carlo_se": 0.01163977555625537,
+      "coverage_wilson_95": [
+        0.9151991622718816,
+        0.9613824572422665
+      ],
+      "mean_estimate": 0.9903348564470401,
+      "bias": -0.00966514355295984,
+      "rmse": 0.3619433569176512,
+      "mean_interval_width": 1.3842554517796741
+    }
+  ],
+  "design_sha256": "ec0006cad0dbe0876ae4cd5b6e6ebae09dce9ec1b1d08df6d0bd9ec5420181ca",
+  "software_version": "0.1.0rc3",
+  "execution_environment": "Python 3.12; NumPy 2.5.4; pandas 3.1.1; macOS ARM64",
+  "interpretation": "Nominal percentile-bootstrap coverage depends on donor count under this fixed synthetic population. No estimator or criterion was tuned after outcomes."
+}

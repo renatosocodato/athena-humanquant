@@ -1,0 +1,12 @@
+{
+  "title": "athena-humanquant: Hierarchical donor-level measurement contrasts",
+  "upload_type": "software",
+  "creators": [
+    {
+      "name": "Socodato, Renato"
+    }
+  ],
+  "license": "mit",
+  "version": "0.1.0rc5",
+  "description": "Software release candidate. Hierarchical donor-level measurement contrasts. Synthetic examples; see README and INPUTS for assumptions and validation limits."
+}

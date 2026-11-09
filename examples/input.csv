@@ -1,0 +1,10 @@
+donor,field,condition,value
+synthetic_01,field_1,control,10
+synthetic_01,field_1,control,12
+synthetic_01,field_2,control,13
+synthetic_02,field_1,control,12
+synthetic_02,field_2,control,14
+synthetic_03,field_1,treated,15
+synthetic_03,field_2,treated,16
+synthetic_04,field_1,treated,17
+synthetic_04,field_2,treated,18
